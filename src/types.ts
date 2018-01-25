@@ -1,5 +1,5 @@
 
-export type TodoItemLeveL = 'plan' | 'normal' | 'urgent' | 'instant'
+export type TodoItemLeveL = 'plan' | 'normal' | 'urgent' | 'instant' |'exe'
 
 export type TodoItemStatus = 'unsolved' | 'solving' | 'solved' | 'archived'
 

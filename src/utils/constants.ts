@@ -16,6 +16,7 @@ export const DEFAULT_TODO_LEVEL_GROUP: TodoItemLeveL[] = [
   'normal',
   'urgent',
   'instant',
+  'exe'
 ]
 
 export const DEFAULT_TODO_LEVEL: TodoItemLeveL = 'normal'
