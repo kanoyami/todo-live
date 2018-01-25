@@ -1,3 +1,7 @@
+In this forked, todo-live allow user to chose an executable task by using bash.
+### Usage
+When you are choosing which type of task you want do,you can chose `exe`.Then enter the command in desctription.
+If you use `todo do` ,the command you entered will execute
 
 <br>
 <div align="center" height="500">
