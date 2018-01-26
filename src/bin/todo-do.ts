@@ -5,7 +5,7 @@ import * as commander from 'commander'
 import * as inquirer from 'inquirer'
 import { TodoItem } from '../types'
 import Chalk from 'chalk'
-import {run_sh} from '../utils/child_process'
+import {RunSh} from '../utils/child_process'
 const store = new Store(DEFAULT_DATABASE)
 
 commander
@@ -22,8 +22,8 @@ const questions = [{
   if (!index) return console.log(`commander [todo do] need task id, like: [todo do 1]\n`)
   const task: TodoItem = await store.findOne({ index: +index })
   if (!task || !task._id) return console.log(`not found task ${index}!\n`)
-  if (task.level == 'exe') {
-    const task_sh = new run_sh(task.description)
+  if (task.level === 'exe') {
+    const task_sh = new RunSh(task.description)
     task_sh.do_run()
   }
   

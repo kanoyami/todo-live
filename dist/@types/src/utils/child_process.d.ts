@@ -1,4 +1,4 @@
-export declare class run_sh {
+export declare class RunSh {
     private address;
     private task;
     constructor(address: string);
